@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\SistemaEncuestasTEST.csproj": {}
+  },
+  "projects": {
+    "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj",
+        "projectName": "AwsComprehend",
+        "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasAPI\\SistemaEncuestasAPI.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasAPI\\SistemaEncuestasAPI.csproj",
+        "projectName": "SistemaEncuestasAPI",
+        "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasAPI\\SistemaEncuestasAPI.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj": {
+                "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj"
+              },
+              "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj": {
+                "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj",
+        "projectName": "SistemaEncuestasBL",
+        "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj": {
+                "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\AwsComprehend\\AwsComprehend.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\SistemaEncuestasTEST.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\SistemaEncuestasTEST.csproj",
+        "projectName": "SistemaEncuestasTEST",
+        "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\SistemaEncuestasTEST.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasAPI\\SistemaEncuestasAPI.csproj": {
+                "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasAPI\\SistemaEncuestasAPI.csproj"
+              },
+              "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj": {
+                "projectPath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasBL\\SistemaEncuestasBL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

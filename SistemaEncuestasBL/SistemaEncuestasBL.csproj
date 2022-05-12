@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58DEB747-653F-4F23-8DFF-6CFCD692D4AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaEncuestasBL</RootNamespace>
+    <AssemblyName>SistemaEncuestasBL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prod|AnyCPU'">
+    <OutputPath>bin\Prod\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\SistemaEncuestasContext.cs" />
+    <Compile Include="DTOs\EncuestaDTO.cs" />
+    <Compile Include="DTOs\EncuestaRespuestaDTO.cs" />
+    <Compile Include="DTOs\LoginDTO.cs" />
+    <Compile Include="DTOs\PersonaDTO.cs" />
+    <Compile Include="DTOs\UsuarioDTO.cs" />
+    <Compile Include="DTOs\MapperConfig.cs" />
+    <Compile Include="DTOs\OpcionDTO.cs" />
+    <Compile Include="DTOs\PreguntaDTO.cs" />
+    <Compile Include="DTOs\PreguntaOMDTO.cs" />
+    <Compile Include="DTOs\PreguntaOSDTO.cs" />
+    <Compile Include="DTOs\PreguntaTextoLibreDTO.cs" />
+    <Compile Include="DTOs\RespuestaDTO.cs" />
+    <Compile Include="DTOs\RespuestaTLDTO.cs" />
+    <Compile Include="DTOs\ResultadoDTO.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Encuesta.cs" />
+    <Compile Include="Models\Etiqueta.cs" />
+    <Compile Include="Models\FraseClave.cs" />
+    <Compile Include="Models\Opcion.cs" />
+    <Compile Include="Models\Persona.cs" />
+    <Compile Include="Models\Pregunta.cs" />
+    <Compile Include="Models\PreguntaOM.cs" />
+    <Compile Include="Models\PreguntaOS.cs" />
+    <Compile Include="Models\PreguntaTL.cs" />
+    <Compile Include="Models\Respuesta.cs" />
+    <Compile Include="Models\RespuestaOM.cs" />
+    <Compile Include="Models\RespuestaOS.cs" />
+    <Compile Include="Models\RespuestaTL.cs" />
+    <Compile Include="Models\Resultado.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IEncuestaRepository.cs" />
+    <Compile Include="Repositories\IEtiquetaRepository.cs" />
+    <Compile Include="Repositories\IFraseClaveRepository.cs" />
+    <Compile Include="Repositories\IGenericRepository.cs" />
+    <Compile Include="Repositories\Implements\EncuestaRepository.cs" />
+    <Compile Include="Repositories\Implements\EtiquetaRepository.cs" />
+    <Compile Include="Repositories\Implements\FraseClaveRepository.cs" />
+    <Compile Include="Repositories\Implements\GenericRepository.cs" />
+    <Compile Include="Repositories\Implements\OpcionRepository.cs" />
+    <Compile Include="Repositories\Implements\PersonaRepository.cs" />
+    <Compile Include="Repositories\Implements\PreguntaOMRepository.cs" />
+    <Compile Include="Repositories\Implements\PreguntaOSRepository.cs" />
+    <Compile Include="Repositories\Implements\PreguntaRepository.cs" />
+    <Compile Include="Repositories\Implements\PreguntaTLRepository.cs" />
+    <Compile Include="Repositories\Implements\RespuestaOMRepository.cs" />
+    <Compile Include="Repositories\Implements\RespuestaOSRepository.cs" />
+    <Compile Include="Repositories\Implements\RespuestaRepository.cs" />
+    <Compile Include="Repositories\Implements\RespuestaTLRepository.cs" />
+    <Compile Include="Repositories\Implements\UsuarioRepository.cs" />
+    <Compile Include="Repositories\IOpcionRepository.cs" />
+    <Compile Include="Repositories\IPersonaRepository.cs" />
+    <Compile Include="Repositories\IPreguntaOMRepository.cs" />
+    <Compile Include="Repositories\IPreguntaOSRepository.cs" />
+    <Compile Include="Repositories\IPreguntaRepository.cs" />
+    <Compile Include="Repositories\IPreguntaTLRepository.cs" />
+    <Compile Include="Repositories\IRespuestaOMRepository.cs" />
+    <Compile Include="Repositories\IRespuestaOSRepository.cs" />
+    <Compile Include="Repositories\IRespuestaRepository.cs" />
+    <Compile Include="Repositories\IRespuestaTLRepository.cs" />
+    <Compile Include="Repositories\IUsuarioRepository.cs" />
+    <Compile Include="Services\IEncuestaService.cs" />
+    <Compile Include="Services\IEtiquetaService.cs" />
+    <Compile Include="Services\IFraseClaveService.cs" />
+    <Compile Include="Services\Implements\EncuestaService.cs" />
+    <Compile Include="Services\Implements\EtiquetaService.cs" />
+    <Compile Include="Services\Implements\FraseClaveService.cs" />
+    <Compile Include="Services\Implements\GenericService.cs" />
+    <Compile Include="Services\IGenericService.cs" />
+    <Compile Include="Services\Implements\PersonaService.cs" />
+    <Compile Include="Services\Implements\PreguntaOMService.cs" />
+    <Compile Include="Services\Implements\PreguntaOSService.cs" />
+    <Compile Include="Services\Implements\PreguntaService.cs" />
+    <Compile Include="Services\Implements\PreguntaTextoLibreService.cs" />
+    <Compile Include="Services\Implements\RespuestaOMService.cs" />
+    <Compile Include="Services\Implements\RespuestaOSService.cs" />
+    <Compile Include="Services\Implements\RespuestaService.cs" />
+    <Compile Include="Services\Implements\RespuestaTLService.cs" />
+    <Compile Include="Services\Implements\UsuarioService.cs" />
+    <Compile Include="Services\IPersonaService.cs" />
+    <Compile Include="Services\IPreguntaOMService.cs" />
+    <Compile Include="Services\IPreguntaOS.cs" />
+    <Compile Include="Services\IPreguntaOSService.cs" />
+    <Compile Include="Services\IPreguntaService.cs" />
+    <Compile Include="Services\IPreguntaTextoLibreService.cs" />
+    <Compile Include="Services\IRespuestaOMService.cs" />
+    <Compile Include="Services\IRespuestaOSService.cs" />
+    <Compile Include="Services\IRespuestaService.cs" />
+    <Compile Include="Services\IRespuestaTLService.cs" />
+    <Compile Include="Services\IUsuarioService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AwsComprehend\AwsComprehend.csproj">
+      <Project>{6001BE34-622D-4406-9E51-8D61A16F36EF}</Project>
+      <Name>AwsComprehend</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

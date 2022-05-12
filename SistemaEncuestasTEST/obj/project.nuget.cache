@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "89ZmsOTXnmSV/pfPr6c+YinpOyU2xm6FH6LPL5BzvNql+DqkO9L0UgZD5LGXpyF1sFTCUBCURBwXbagZjouyyw==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\SistemaEncuestasApi-public_repo\\SistemaEncuestas\\SistemaEncuestasAPI_PUB\\SistemaEncuestasTEST\\SistemaEncuestasTEST.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marti\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}

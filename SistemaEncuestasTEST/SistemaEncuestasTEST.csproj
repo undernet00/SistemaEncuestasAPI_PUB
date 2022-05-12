@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <UserSecretsId>e1ca618f-7c8b-4c8b-9600-8094fb312648</UserSecretsId>
+
+    <Configurations>Debug;Release;Prod</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaEncuestasAPI\SistemaEncuestasAPI.csproj" />
+    <ProjectReference Include="..\SistemaEncuestasBL\SistemaEncuestasBL.csproj" />
+  </ItemGroup>
+
+</Project>
